@@ -7,3 +7,77 @@ input {
   padding: 1rem;
   width: 80%;
 }
+
+/* CONTAINER */
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-left {
+  text-align: left;
+  margin: auto;
+}
+
+.container-right {
+  text-align: right;
+  margin: auto;
+}
+.container-center {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 2rem;
+}
+.section .duration {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.section .grade {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.section h1 {
+  text-align: center;
+}
+.ow {
+  background-color: var(white);
+  color: black;
+}
+
+.color-inverted {
+  color: yellow;
+}
+.purple {
+  color: purple;
+  font-weight: bolder;
+}
+.blue {
+  color: red;
+}
+
+.title {
+  color: var(--primary-color);
+  background-color: black;
+  border-radius: 1rem;
+}
+
+.container .container-center .go-right {
+  text-align: right;
+  margin: auto;
+}
+
+.container .container-center .go-left {
+  text-align: left;
+  margin: auto;
+}
+
+.edu {
+  font-size: 1.25rem;
+}

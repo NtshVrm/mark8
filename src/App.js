@@ -11,7 +11,11 @@ const foodDictionary = {
   "🍦": "Ice Cream",
   "🍜": "Noodles",
   "🍞": "Bread",
-  "🍩": "Doughnut"
+  "🍩": "Doughnut",
+  "🥞": "Pancakes",
+  "🥨": "Pretzel",
+  "🍤": "Prawns",
+  "🍰": "Cake"
 };
 
 var foods = Object.keys(foodDictionary);
@@ -39,23 +43,35 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Inside Out </h1>
-      <input onChange={foodinputHandler}></input>
-      <div>The Food is: {meaning}</div>
+      <section className="section ow edu">
+        <div className="container container-center title">
+          <h1 className="color-inverted"> FOOD EMOJI INTERPRETER</h1>
 
-      <div>Click on any emoji below:</div>
-      {foods.map(function (emoji) {
-        return (
-          <span
-            onClick={() => foodClickHandler(emoji)}
-            style={{ fontSize: "2rem", padding: "0.5rem", cursor: "pointer" }}
-            key={emoji}
-          >
-            {" "}
-            {emoji}
-          </span>
-        );
-      })}
+          <input onChange={foodinputHandler}></input>
+          <div className="purple">
+            <u>THE FOOD IS:</u> <div className="blue">{meaning}</div>
+          </div>
+
+          <div className="purple">CLICK ON ANY EMOJI BELOW ⬇:</div>
+          {foods.map(function (emoji) {
+            return (
+              <span
+                className="ow"
+                onClick={() => foodClickHandler(emoji)}
+                style={{
+                  fontSize: "2rem",
+                  padding: "0.5rem",
+                  cursor: "pointer"
+                }}
+                key={emoji}
+              >
+                {" "}
+                {emoji}
+              </span>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }
